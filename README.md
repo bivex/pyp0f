@@ -58,6 +58,33 @@ apache_payload = b"HTTP/1.1 200 OK\r\nDate: Fri, 10 Jun 2011 13:27:01 GMT\r\nSer
 http_result: HTTPResult = fingerprint_http(apache_payload)
 ```
 
+## GUI Interface
+
+A modern PyQt5 graphical interface is available for real-time network traffic analysis:
+
+### Quick Start
+```bash
+# Demo version (shows interface with test data)
+./run_demo.sh
+
+# Full version (captures live network traffic - requires sudo)
+./run_gui.sh
+```
+
+### Features
+- **Real-time packet capture** and analysis
+- **Visual packet classification** with color coding
+- **Live statistics** and traffic monitoring
+- **Light theme** optimized for macOS
+- **Detailed packet information** with OS fingerprinting
+
+### GUI Files
+All GUI-related files are located in the `gui/` directory:
+- `pyp0f_gui.py` - Main GUI application
+- `demo_gui.py` - Demo version with test data
+- `run_gui.sh` / `run_demo.sh` - Launch scripts
+- `README_GUI.md` - Detailed GUI documentation
+
 ## Sources
 - [p0f source code](https://github.com/p0f/p0f)
 - [Scapy docs & source code](https://scapy.net)
